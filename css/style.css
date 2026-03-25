@@ -77,6 +77,24 @@ section h2 {
   text-decoration: none;
 }
 
+.news-item {
+  background: #1b1f3a;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.news-item h3 {
+  margin-top: 0;
+}
+
+.news-item .date {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
 .card a:hover {
   text-decoration: underline;
 }
