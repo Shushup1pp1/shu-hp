@@ -12,48 +12,68 @@
     <nav>
       <a href="index.html">Home</a>
       <a href="works.html">Works</a>
-      <a href="board.html">Board</a>
+      <a href="board.html">Boards</a>
+      <a href="news.html">News</a>
     </nav>
   </header>
 
   <main>
+    <!-- 訪問者カウンター -->
+    <section class="counter">
+      <h2>訪問者数</h2>
+      <p id="visitor-count">Loading...</p>
+    </section>
+
     <section>
       <h2>自己紹介</h2>
       <p>
         なんかよくわかんない事してる人()
       </p>
     </section>
+
     <section class="now">
-  <h2>今やってること</h2>
-  <ul>
-    <li>冬休みの自由研究してる</li>
-    <li>このWeb作ってる</li>
-    <li>なんのゲーム作ろうかアイデアが出ない()</li>
-  </ul>
-</section>
+      <h2>今やってること</h2>
+      <ul>
+        <li>冬休みの自由研究してる</li>
+        <li>このWeb作ってる</li>
+        <li>なんのゲーム作ろうかアイデアが出ない()</li>
+      </ul>
+    </section>
 
-<section class="featured">
-  <h2>ピックアップ作品</h2>
-  <div class="card">
-    <h3>リアルタイムお天気ビューアー
-    <p>自由研究で作ってみた</p>
-    <a href="https://otenki-viewer.vercel.app">→ 作品ページへ</a>
-  </div>
-</section>
+    <section class="featured">
+      <h2>ピックアップ作品</h2>
+      <div class="card">
+        <h3>リアルタイムお天気ビューアー</h3>
+        <p>自由研究で作ってみた</p>
+        <a href="https://otenki-viewer.vercel.app">→ 作品ページへ</a>
+      </div>
+    </section>
 
-<section class="log">
-  <h2>更新ログ</h2>
-  <ul>
-    <li>2025-01-01 サイト公開</li>
-    <li>Worksページ準備開始</li>
-    <li>掲示板構想中…</li>
-  </ul>
-</section>
-
+    <section class="news-preview">
+      <h2>最新ニュース</h2>
+      <ul>
+        <li>2026-03-25 v2.0 KUSODEKA UPDATE 公開</li>
+        <li>Boardsページ運用開始</li>
+        <li>Newsページ追加</li>
+      </ul>
+      <a href="news.html">→ すべてのニュースを見る</a>
+    </section>
   </main>
 
   <footer>
-    <p>© 2025 AquaWorks</p>
+    <p>© 2026 AquaWorks</p>
   </footer>
+
+  <script>
+    // シンプルな訪問者カウンター（localStorage版）
+    let count = localStorage.getItem("visitorCount");
+    if (!count) {
+      count = 1;
+    } else {
+      count = parseInt(count) + 1;
+    }
+    localStorage.setItem("visitorCount", count);
+    document.getElementById("visitor-count").textContent = count + " 人目の訪問です！";
+  </script>
 </body>
 </html>
