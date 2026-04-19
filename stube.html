@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>STube | しゅうのホームページ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>しゅうのホームページ</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="works.html">Works</a>
+    <a href="stube.html">STube</a>
+    <a href="news.html">News</a>
+  </nav>
+</header>
+
+<main>
+  <h2>STube</h2>
+
+  <!-- 投稿フォーム -->
+  <section>
+    <h3>動画を投稿</h3>
+    <input id="title" placeholder="タイトル">
+    <input id="url" placeholder="YouTubeリンク">
+    <button onclick="addVideo()">投稿</button>
+  </section>
+
+  <hr>
+
+  <!-- 動画一覧 -->
+  <div id="videos"></div>
+</main>
+
+<script src="js/stube.js"></script>
+</body>
+</html>
