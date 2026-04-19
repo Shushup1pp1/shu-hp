@@ -98,3 +98,9 @@ section h2 {
 .card a:hover {
   text-decoration: underline;
 }
+#videos div {
+  background: #1b1f3a;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
